@@ -10,6 +10,7 @@ module.exports = {
     filename: "index.js", // 打包后的文件名称
     path: path.resolve(__dirname, "../lib"), // 打包后的目录
     libraryTarget: "umd",
+    globalObject: "this",
     library: "transformlnglat", // 直接浏览器引用时在window的key
   },
   module: {
